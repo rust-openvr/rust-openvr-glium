@@ -1,0 +1,13 @@
+[package]
+name = "openvr-util"
+version = "0.1.0"
+authors = ["Rene Eichhorn <rene.eichhorn@mni.thm.de>"]
+
+[features]
+glium_helper = ["glium"]
+nalgebra_helper = ["nalgebra"]
+
+[dependencies]
+openvr = { path = "../rust-openvr/" }
+nalgebra = { version = "0.8.2", optional = true }
+glium = { version = "0.14.0", optional = true }
